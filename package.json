@@ -1,0 +1,17 @@
+{
+  "name": "cryptographic_keygen_utility",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This script is a Node.js application designed for generating cryptographic keys using various algorithms and configurations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "jose": "^5.2.0",
+    "node-jose": "^2.2.0"
+  }
+}
