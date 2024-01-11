@@ -26,7 +26,7 @@ This script is a Node.js application designed for generating cryptographic keys 
 
 To use the script, follow these steps:
 
-1. Run the script using `node [script-name.js]`.
+1. Run the script using `node index`.
 2. Follow the interactive prompts to choose the key type, purpose (signing or encryption), algorithm, and key size/curve.
 3. The script will output the generated key in JWKS and PEM formats.
 
