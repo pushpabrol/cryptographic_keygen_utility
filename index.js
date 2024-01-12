@@ -182,13 +182,12 @@ async function generateKey() {
       const key = await keystore.generate(keyType, keySize, { use: keyUse, alg: algorithm });
 
       const jwksKey = key.toJSON(true);
-      const jwksKeyPEM = key.toPEM(true);
-      console.log(asymmetric ? 'Generated Key (JWKS):' : 'Shared Key (JWKS):');
+
+      console.log(asymmetric ? 'Generated Private Key (JWKS):' : 'Shared Key (JWKS):');
       console.log(jwksKey);
-      console.log(jwksKeyPEM);
       if (asymmetric) {
+        console.log(asymmetric ? 'Generated Private Key (PEM):' : 'Shared Key (PEM):');
         const pemKey = await key.toPEM(true);
-        console.log(asymmetric ? '\nGenerated Key (PEM): ' : '\nShared Key (PEM): ');
         console.log(pemKey);
         console.log('Generated Public Key (JWKS):');
         console.log(key.toJSON());
